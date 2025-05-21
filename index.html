@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+</head>
+<body>
+
+  <h2>Internship/Job Application Form</h2>
+
+  <form action="/submit" method="POST" enctype="multipart/form-data">
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="id">ID:</label><br>
+    <input type="text" id="id" name="id" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="contact">Contact Number:</label><br>
+    <input type="tel" id="contact" name="contact" required><br><br>
+
+    <label for="position">Position Applied For:</label><br>
+    <select id="position" name="position" required>
+      <option value="">-- Select Position --</option>
+      <option value="operations_intern">Operations Intern/Coordinator</option>
+      <option value="mto">Management Trainee Officer (MTO)</option>
+      <option value="it_dept">Information Technology Dept</option>
+      <option value="social_media">Social Media Handler</option>
+    </select><br><br>
+
+    <label for="resume">Upload Resume (PDF/DOC):</label><br>
+    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
